@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { FeedPage } from "./../feed/feed";
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
@@ -16,5 +17,8 @@ export class IntroPage {
   }
   goToTabsPages() {
     this.navCtrl.push(FeedPage);
+  }
+  logout(){
+    this.navCtrl.push(LoginPage);
   }
 }

@@ -1,5 +1,8 @@
 page-tarefas-add {
-    botao{
+    .botao{
         margin-bottom: 30px; 
  }
+ .tabbar .show-tabbar a:nth-child(1){
+    display:none !important;
+}
 }

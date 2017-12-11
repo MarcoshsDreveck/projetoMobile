@@ -1,3 +1,4 @@
+import { FeedPage } from './../feed/feed';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams, ViewController, ToastController } from 'ionic-angular';
@@ -31,7 +32,9 @@ export class TarefasAddPage {
     this.tarefaForm = this.fb.group({
       'titulo': ['',Validators.compose([Validators.required, Validators.minLength(5)])],
       'descricao': [''],
-      'estadoTarefa': ['',Validators.required]
+      'estadoTarefa': ['',Validators.required],
+      'dataTermino': [''],
+      'empresa': ['']
     });
   }
 
@@ -52,4 +55,5 @@ export class TarefasAddPage {
   logout(){
     this.navCtrl.push(LoginPage);
   }
+
 }

@@ -1,10 +1,14 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Câmera
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar color='primary'>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Câmera</ion-title>
+      <ion-buttons end>
+       <button ion-button icon-right (click)="logout()">Sair<ion-icon name="ios-log-out"></ion-icon></button>
+     </ion-buttons>
+    </ion-navbar>
+  </ion-header>
 
 <ion-content padding>
   <button ion-button full (click)="takePhotos()">

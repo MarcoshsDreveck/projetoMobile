@@ -1,7 +1,9 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, AlertController } from 'ionic-angular';
 import { CameraOptions } from '@ionic-native/camera';
 import { Camera } from '@ionic-native/camera';
+import { FeedPage } from '../feed/feed';
 
 
 @IonicPage()
@@ -61,6 +63,9 @@ export class CameraPage {
       ]
     });
     confirm.present();
+  }
+  logout(){
+    this.navCtrl.push(LoginPage);
   }
   
   }

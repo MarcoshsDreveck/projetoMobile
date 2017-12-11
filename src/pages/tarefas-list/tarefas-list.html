@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Minhas Tarefas</ion-title>
+    <ion-title>Meus Desafios</ion-title>
     <ion-buttons end>
      <button ion-button icon-right (click)="logout()">Sair<ion-icon name="ios-log-out"></ion-icon></button>
    </ion-buttons>
@@ -15,7 +15,7 @@
 <ion-content>
     <ion-list>
       <ion-item *ngFor="let tarefa of tarefas">
-        {{tarefa.titulo}}
+        {{tarefa.titulo}} - {{tarefa.datatermino}}
         <button ion-item (click)="atualizarTarefa(tarefa)">
           <tarefa-list-item [tarefa]="tarefa"></tarefa-list-item>
         </button>

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color='primary'>
-    <ion-title>{{tarefa.titulo != undefined ? tarefa.titulo : 'Minha tarefa'}}</ion-title>
+    <ion-title>{{tarefa.titulo != undefined ? tarefa.titulo : 'Novo Desafios'}}</ion-title>
     <ion-buttons end>
      <button ion-button icon-right (click)="logout()">Sair<ion-icon name="ios-log-out"></ion-icon></button>
    </ion-buttons>
@@ -27,6 +27,22 @@
           </ion-item>
         </ion-col>
       </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label floating>Data de termino</ion-label>
+              <ion-input formControlName="dataTermino" name="dataTermino" [(ngModel)]="tarefa.datatermino"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label floating>Empresa</ion-label>
+                <ion-input formControlName="empresa" name="empresa" [(ngModel)]="tarefa.empresanome"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
 
       <ion-row>
         <ion-col>

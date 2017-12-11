@@ -3,7 +3,6 @@ import { TarefasAddPage } from './../tarefas-add/tarefas-add';
 import { TarefasListPage } from './../tarefas-list/tarefas-list';
 import { TarefaListItemComponent } from './../../components/tarefa-list-item/tarefa-list-item';
 import { RegistrarPage } from './../registrar/registrar';
-
 import { LoginPage } from './../login/login';
 import { FeedPage } from './../feed/feed';
 import { IntroPage } from './../intro/intro';
@@ -16,10 +15,10 @@ import { HomePage } from '../home/home';
 })
 export class TabsPage {
 
-
-  tab1Root = IntroPage;
-  tab2Root = FeedPage;
-  tab3Root = LoginPage;
+  tab1Root = LoginPage;
+  
+  tab2Root = IntroPage;
+  tab3Root = FeedPage;
    tab5Root = HomePage;
     tab7Root = TarefasListPage;
    tab8Root = TarefasAddPage;

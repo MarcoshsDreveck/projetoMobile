@@ -5,15 +5,19 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Aqui</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
+    <ion-navbar color='primary'>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Feed</ion-title>
+      <ion-buttons end>
+       <button ion-button icon-right (click)="logout()">Sair<ion-icon name="ios-log-out"></ion-icon></button>
+     </ion-buttons>
+    </ion-navbar>
+  </ion-header>
 
 <ion-content padding>
+  <!--inicio item-->
 
   <ion-item>
     <ion-avatar item-start>
@@ -29,7 +33,7 @@
   <img src="assets/images/yoda2.png">
 
   <ion-card-content>
-    <p>Curso Ionic 3, aprendendo a colocar imagens e fazer pastas...</p>
+    <p>Postado dia 07/10/2017</p>
   </ion-card-content>
 
   <ion-row>
@@ -51,6 +55,198 @@
       </ion-note>
     </ion-col>
   </ion-row>
+ 
+  <!--inicio item-->
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/images/vader1.jpg">
+    </ion-avatar>
+    <h2 class="feed_title">Marcos Dreveck</h2>
+    <p >Foto para anúncio</p>
+    <p >11/12/2017</p>
+    <p >{{objeto_feed.descricao }}</p>
+
+  </ion-item>
+
+  <img src="assets/images/vader1.jpg">
+
+  <ion-card-content>
+    <p>Postado dia 11/12/2017</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>18 Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>6 Comments</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        12h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+  <!--Fim item-->
+    <!--inicio item-->
+    <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/images/vader2.jpg">
+        </ion-avatar>
+        <h2 class="feed_title">Juliana Macaneiro</h2>
+        <p >Foto para anúncio</p>
+        <p >11/12/2017</p>
+        <p >{{objeto_feed.descricao }}</p>
+    
+      </ion-item>
+    
+      <img src="assets/images/vader2.jpg">
+    
+      <ion-card-content>
+        <p>Postado dia 11/12/2017</p>
+      </ion-card-content>
+    
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>13 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>
+            18h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+      <!--Fim item-->
+        <!--inicio item-->
+  <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/images/vader3.jpg">
+      </ion-avatar>
+      <h2 class="feed_title">Marcos Dreveck</h2>
+      <p >Foto para anúncio</p>
+      <p >11/12/2017</p>
+      <p >{{objeto_feed.descricao }}</p>
+  
+    </ion-item>
+  
+    <img src="assets/images/vader3.jpg">
+  
+    <ion-card-content>
+      <p>Postado dia 11/12/2017</p>
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>13 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>33 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          10h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <!--Fim item-->
+      <!--inicio item-->
+  <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/images/vader4.jpg">
+      </ion-avatar>
+      <h2 class="feed_title">Juliana Macaneiro</h2>
+      <p >Foto para anúncio</p>
+      <p >11/12/2017</p>
+      <p >{{objeto_feed.descricao }}</p>
+  
+    </ion-item>
+  
+    <img src="assets/images/vader4.jpg">
+  
+    <ion-card-content>
+      <p>Postado dia 11/12/2017</p>
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>102 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>47 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          10h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <!--Fim item-->
+      <!--inicio item-->
+  <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/images/vader5.jpg">
+      </ion-avatar>
+      <h2 class="feed_title">Marcos Dreveck</h2>
+      <p >Foto para anúncio</p>
+      <p >11/12/2017</p>
+      <p >{{objeto_feed.descricao }}</p>
+  
+    </ion-item>
+  
+    <img src="assets/images/vader5.jpg">
+  
+    <ion-card-content>
+      <p>Postado dia 11/12/2017</p>
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>4 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>5 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          10h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <!--Fim item-->
+
 
 
 </ion-content>

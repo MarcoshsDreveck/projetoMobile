@@ -23,12 +23,12 @@ import { Camera } from '@ionic-native/camera';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvNmUeN22C-hUqMhByZABsSnnxvtrP7Mo",
-  authDomain: "teste2-1ac20.firebaseapp.com",
-  databaseURL: "https://teste2-1ac20.firebaseio.com",
-  projectId: "teste2-1ac20",
-  storageBucket: "teste2-1ac20.appspot.com",
-  messagingSenderId: "93788253873"
+    apiKey: "AIzaSyBXJAdwvnA1IfUyJgqx7rzJ40jwqZfTiec",
+    authDomain: "pii-plataforma-de-imagens.firebaseapp.com",
+    databaseURL: "https://pii-plataforma-de-imagens.firebaseio.com",
+    projectId: "pii-plataforma-de-imagens",
+    storageBucket: "pii-plataforma-de-imagens.appspot.com",
+    messagingSenderId: "836958557861"
 };
 @NgModule({
   declarations: [

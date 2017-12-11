@@ -1,5 +1,46 @@
 page-login {
-.btnLogin *{
-  font-size: 0.6em;
-}
-}
+  .btnLogin {
+    font-size: 0.9em;
+   margin-top: 2px;
+   border-radius: 8px;
+   }
+  .apis{
+    padding-top: 0px;   
+  }
+  .radius{
+    border-radius: 8px;
+    border-top: 60px;
+    padding-top:2px; 
+    width:100%; 
+    height: 20%;   
+    margin-top: -8px; 
+   }
+  .estrutura{ 
+    background:#f5fbef;
+    margin-top: 10px;
+    width: 90%;
+    }
+  .label{
+    margin-top: -20px;  
+  }
+  
+  .entrar{
+    margin-top: -4px;
+    height: 35px;
+    width:55%; 
+    border-radius: 4px;
+    background:#3D5A80;
+    margin-left: 40px;
+  } 
+  
+  .fundo{
+    background: #f5fbef;
+   margin-top:-10px; 
+  
+    }
+   .registrar{
+     margin-top: -10px; 
+   }
+  }
+  
+  

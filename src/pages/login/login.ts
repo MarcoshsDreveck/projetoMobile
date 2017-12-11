@@ -4,6 +4,7 @@ import { Credencial } from './../../model/credencial';
 import { RegistrarPage } from "./../registrar/registrar";
 import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
+import { FeedPage } from '../feed/feed';
 
 
 
@@ -25,7 +26,7 @@ credencial: Credencial;
   ionViewDidLoad() {
     this.credencial = new Credencial();
     this.LoginProvider.loginSucessoEventEmitter.subscribe(
-      user => this.navCtrl.setRoot(TarefasListPage)
+      user => this.navCtrl.setRoot(FeedPage)
     )
     this.LoginProvider.loginFalhaEventEmitter.subscribe(error =>
       console.log(error)
@@ -44,5 +45,18 @@ this.LoginProvider.loginComFacebook();
 
   doRegister() {
     this.navCtrl.push(RegistrarPage);
+  }
+  ionViewDidEnter() {
+    let elem = <HTMLElement>document.querySelector(".tabbar");
+    if (elem != null) {
+      elem.style.display = 'none';
+    }
+  }
+  ionViewDidLeave() {
+    let elem = <HTMLElement>document.querySelector(".tabbar");
+    if ( elem !== null ) {
+      elem.style.display = 'flex';
+      
+    } // end if
   }
 }

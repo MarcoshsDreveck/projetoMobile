@@ -5,11 +5,15 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Feed</ion-title>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ajuda</ion-title>
+    <ion-buttons end>
+     <button ion-button icon-right (click)="logout()">Sair<ion-icon name="ios-log-out"></ion-icon></button>
+   </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -18,20 +22,24 @@
   <ion-slides pager>
 
   <ion-slide class="slide-image">
-      <img src="assets/images/slide1.png" alt="camera">
-        <h2>Iphone</h2>
-       <p> Tudo funcionando perfeitamente, aula fluindo... <!-- <span><a href="https://www.facebook.com/">Clique Aqui</a></span> --></p>
+      <img class="img1" src="assets/images/cadastrar.png" alt="camera">
+        <h2>Cadastro</h2>
+       <p> Mantenha seu cadastro atualizado para participar de novos desafios</p>
   </ion-slide>
 
   <ion-slide class="slide-image">
-      <img src="assets/images/slide2.png" alt="camera">
-        <h2>Celular</h2>
+      <img class="img2" src="assets/images/notificacao.png" alt="camera">
+        <h2>Notificação</h2>
+        <p>Deixa as notificações ativas para <br>receber desafios e ofertas.</p>
   </ion-slide>
 
   <ion-slide class="slide-image">
-      <img src="assets/images/slide3.png" alt="camera">
-        <h2>Balão</h2>
-       <a (click)="goToTabsPages()"> Continuar</a>
+      <img class="img3" src="assets/images/moedas.png" alt="camera">
+        <h2>Moedas</h2>
+        <p>Participe de desafios e ganhe com isto.</p>
+  </ion-slide>
+  <ion-slide class="slide-image">
+      <img class="img4" src="assets/images/ciclo.png" alt="camera">
   </ion-slide>
 
 

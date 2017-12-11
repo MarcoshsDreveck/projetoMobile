@@ -81,4 +81,10 @@ deletarTarefa(tarefa: Tarefa) {
   logout(){
     this.navCtrl.push(LoginPage);
   }
+  ionViewDidEnter() {
+    let elem = <HTMLElement>document.querySelector(".tabbar a:nth-child(1)");
+    if (elem != null) {
+      elem.style.display = 'none';
+    }
+  }
 }

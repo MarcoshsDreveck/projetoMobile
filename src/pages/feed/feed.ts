@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -10,7 +11,7 @@ export class FeedPage {
   public objeto_feed = {
     titulo: "Juliana Maçaneiro",
     data: "09/10/2017",
-    descricao: "Aula de ionic 3 da Udemy, muito bom. Recomendo",
+    descricao: "Foto para catálogo",
     qtd_likes: 12,
     qtd_comments: 4,
     time_coment: "11h ago"
@@ -20,6 +21,16 @@ public nome_usuario: string = "Juliana Maçaneiro";
   constructor(public navCtrl: NavController,
      public navParams: NavParams) {
   }
+  ionViewDidEnter() {
+    let elem = <HTMLElement>document.querySelector(".tabbar a:nth-child(1)");
+    if (elem != null) {
+      elem.style.display = 'none';
+    }
+  }
+  logout(){
+    this.navCtrl.push(LoginPage);
+  }
+  
 // ionViewDidLoad() {
 //   console.log('IonViewDidLoad FeedPage')
 
@@ -29,7 +40,4 @@ public nome_usuario: string = "Juliana Maçaneiro";
 
 //   ionViewDidLoad() {
 //     this.somaDoisNumeros(10, 99);
-
-
-
 }
